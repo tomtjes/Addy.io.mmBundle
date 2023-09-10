@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Note: Escaping double-quotes is important both for functionality and security.
+
+# Note: Side-effects: Upload time/bandwidth, other email clients see it as a new message.
+
+if [ $? -eq 0 ]
+then
+
+cat << ENDL
+{ actions = (
+	{
+		type = changeHeaders;
+		headers = { 
+			"from" = "${ADDY_ORIG_FROM//\"/\"}"; 
+			"reply-to" = "${ADDY_FROM//\"/\"}"; 
+			"to" = "${ADDY_TO//\"/\"}";
+			};
+	}
+); }
+ENDL
+
+fi

@@ -1,0 +1,6 @@
+{	"contactEmailRot13" = "frpherznvy.sbb3pc4s@gubznf.ervqvb.vb";
+	contactName = "tomtjes";
+	description = "Set From and To headers of emails forwarded by Addy.io to non-addy.io addresses and strip banner from replies.";
+	name = "Addy.io";
+	uuid = "050A8040-CD2B-4A1B-A4CE-5B318E01E856";
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/perl -0777
+
+my $str = <>;
+$str =~ s/<!--banner-info-->.*deactivate this alias.*?<!--banner-info-->//gms;
+print $str;

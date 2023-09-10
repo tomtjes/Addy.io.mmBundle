@@ -1,0 +1,7 @@
+{
+	name          = 'Strip Addy HTML Banner';
+	uuid          = '314E579D-F1DF-435F-829F-CC78AF411EE9';
+	input         = 'html';
+	output        = 'html';
+	command       = '#!/bin/bash\n"${MM_BUNDLE_SUPPORT}/bin/htmlbanner"\n';
+}

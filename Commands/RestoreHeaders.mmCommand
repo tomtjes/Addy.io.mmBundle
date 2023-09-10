@@ -1,0 +1,8 @@
+{	name          = 'Restore Headers';
+    conditions    = 'X-AnonAddy-Original-From-Header exists';
+	output        = 'actions';
+	uuid          = 'FDFAD3EE-8109-4F86-A767-43EDFB39E7FC';
+	executionMode = 'singleMessage';
+    environment   = 'ADDY_ORIG_FROM=${x-anonaddy-original-from-header}\nADDY_FROM=${from}\nADDY_TO=${envelope-to:${delivered-to:${X-AnonAddy-Original-To}}}';
+	command       = '#!/bin/bash\n"${MM_BUNDLE_SUPPORT}/bin/header"\n';
+}

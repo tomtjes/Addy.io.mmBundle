@@ -1,0 +1,5 @@
+#!/usr/bin/perl -0777
+
+my $str = <>;
+$str =~ s/<tr((?!<tr).)*deactivate this alias.*?<\/tr>//gms;
+print $str;

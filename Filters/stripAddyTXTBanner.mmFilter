@@ -1,0 +1,7 @@
+{
+	name          = 'Strip Addy Plain Text Banner';
+	uuid          = 'C7A0BBFC-C456-43C3-B999-C5BDA7B44EDB';
+	input         = 'canonical';
+	output        = 'canonical';
+	command       = '#!/bin/bash\n"${MM_BUNDLE_SUPPORT}/bin/txtbanner"\n';
+}
